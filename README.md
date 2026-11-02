@@ -1,3 +1,5 @@
+<img width="1595" height="678" alt="image" src="https://github.com/user-attachments/assets/de2f32f4-71e6-471a-b072-05995c47b54b" />
+
 # MyCalci
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.2.5.
