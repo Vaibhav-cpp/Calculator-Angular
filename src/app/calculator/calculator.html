@@ -1,0 +1,49 @@
+<table class="calculator-grid">
+    <!--Row 1: The Display Screen-->
+    <tr>
+        <td colspan="4">
+            <div class="screen">{{ displayValue }}</div>
+        </td>
+    </tr>
+
+    <!--Row 2: Clear and Division operators-->
+    <tr>
+        <td><button (click)="clearDisplay()">C</button></td>
+        <td><button (click)="appendValue('(')">(</button></td>
+        <td><button (click)="appendValue(')')">)</button></td>
+        <td><button (click)="appendValue('/')">/</button></td>
+    </tr>
+
+    <!--Row 3: Numbers 7,8,9 and multiply-->
+    <tr>
+        <td><button (click)="appendValue('7')">7</button></td>
+        <td><button (click)="appendValue('8')">8</button></td>
+        <td><button (click)="appendValue('9')">9</button></td>
+        <td><button (click)="appendValue('*')">*</button></td>
+    </tr>
+
+    <!--Row 4: Numbers 4, 5, 6 and add-->
+    <tr>
+        <td><button (click)="appendValue('4')">4</button></td>
+        <td><button (click)="appendValue('5')">5</button></td>
+        <td><button (click)="appendValue('6')">6</button></td>
+        <td><button (click)="appendValue('-')">-</button></td>
+    </tr>
+
+    <!--Row 5: Numbers 1, 2, 3 and -->
+    <tr>
+        <td><button (click)="appendValue('1')">1</button></td>
+        <td><button (click)="appendValue('2')">2</button></td>
+        <td><button (click)="appendValue('3')">3</button></td>
+        <td><button (click)="appendValue('+')">+</button></td>
+    </tr>
+
+    <!--Row 6: Zero, Decimal, and Equals-->
+    <tr>
+        <td colspan="2">
+            <button class="zero-btn" (click)="appendValue('0')">0</button>
+        </td>
+        <td><button (click)="appendValue('.')">.</button></td>
+        <td><button class="equals-btn" (click)="calculateResult()">=</button></td>
+    </tr>
+</table>
